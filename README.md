@@ -1,2 +1,2 @@
-# passgenerator
-A python script to generate complex password
+# password generator
+A simple python script to generate complex password
