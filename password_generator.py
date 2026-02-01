@@ -54,10 +54,10 @@ LANG = {
 
 
 # ─────────────────────────────────────────────
-#  SELEZIONE LINGUA
+#  SELECT LANGUAGE
 # ─────────────────────────────────────────────
 def pick_language():
-    prompt = LANG["IT"]["pick_lang"]   # bilingue per questa prima domanda
+    prompt = LANG["IT"]["pick_lang"]   # select language
     while True:
         scelta = input(prompt).strip()
         if scelta == "1":
@@ -68,7 +68,7 @@ def pick_language():
 
 
 # ─────────────────────────────────────────────
-#  HELPER: SI / NO
+#  HELPER: YES / NO
 # ─────────────────────────────────────────────
 def ask_yes_no(domanda, t):
     while True:
@@ -81,7 +81,7 @@ def ask_yes_no(domanda, t):
 
 
 # ─────────────────────────────────────────────
-#  HELPER: NUMERO
+#  HELPER: NUMBER
 # ─────────────────────────────────────────────
 def ask_number(domanda, t, minimo=1):
     while True:
@@ -95,7 +95,7 @@ def ask_number(domanda, t, minimo=1):
 
 
 # ─────────────────────────────────────────────
-#  GENERAZIONE PASSWORD
+#  GENERATE PASSWORD
 # ─────────────────────────────────────────────
 def generate_password(length, charset, t):
     if not charset:
@@ -160,7 +160,7 @@ def main():
 
     # 5. Salva nella cartella dello script
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path  = os.path.join(script_dir, "password_salvate.txt")
+    file_path  = os.path.join(script_dir, "passwords.txt")
 
     with open(file_path, "a") as f:
         f.write(f"\n--- {t['file_header'].format(qty=quantity, len=length)} ---\n")
