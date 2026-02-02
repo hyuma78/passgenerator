@@ -29,7 +29,7 @@ python password_generator.py
    - Set the desired password length (minimum 4).
    - Set how many passwords you want to generate.
 
-5. The generated passwords are displayed in the terminal and automatically saved to `password.txt`.
+5. The generated passwords are displayed in the terminal and automatically saved to `passwords.txt`.
 
 ## License
 
