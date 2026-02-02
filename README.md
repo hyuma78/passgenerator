@@ -30,7 +30,3 @@ python password_generator.py
    - Set how many passwords you want to generate.
 
 5. The generated passwords are displayed in the terminal and automatically saved to `passwords.txt`.
-
-## License
-
-This project is open source and free to use.
